@@ -1,0 +1,232 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="port.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>PortFolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="card">
+        <img src="/spider-man.jpg" alt="" id="profile-pic" class="profilePic" />
+        <label
+          for="input-file"
+          class="input-files fas fa-camera"
+          id="inputt"
+        ></label>
+        <input
+          class="input"
+          type="file"
+          id="input-file"
+          accept="image/jpeg, image/png, image/jpg"
+        />
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#education">education</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <h3><span>HI</span> THERE !</h3>
+      <form id="user-information">
+        <input
+          type="text"
+          id="firstname"
+          class="names firstname"
+          placeholder="Firstname"
+          required
+        />
+        <br />
+        <input
+          type="text"
+          id="middlename"
+          class="names middlename"
+          placeholder="Middlename"
+          required
+        />
+        <br />
+        <input
+          type="text"
+          id="lastname"
+          class="names lastname"
+          placeholder="Lastname "
+          required
+        />
+      </form>
+      <a href="#about"
+        ><button class="btn">about me <i class="fas fa-user"></i></button
+      ></a>
+    </section>
+
+    <section class="about bouts" id="about">
+      <h1 class="heading"><i class="fas fa-user"></i><span> About</span> me</h1>
+      <div class="row bou">
+        <form id="user-about" action="">
+          <textarea
+            name="about"
+            id="about"
+            class="bout"
+            cols="20"
+            rows="10"
+            placeholder="About Me!"
+          ></textarea>
+          <br />
+
+          <input
+            type="text"
+            name="gender"
+            class="gender names"
+            placeholder="Gender"
+          />
+
+          <input
+            type="text"
+            class="country names"
+            name="country"
+            placeholder="Your Country"
+          />
+
+          <input
+            type="text"
+            name="religion "
+            class="religion names"
+            placeholder="Your Religion"
+          />
+
+          <input
+            type="text"
+            name="relgion"
+            class="language names"
+            placeholder="Your Language"
+          />
+          <input
+            type="text"
+            name="relgion"
+            class="post names"
+            placeholder="Your Post"
+          />
+        </form>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h1 class="heading">
+        <i class="fas fa-graduation-cap"></i> My <span>Education</span>
+      </h1>
+      <div class="row edu">
+        <form id="user-education">
+          <input
+            type="text"
+            name="relgion"
+            class="language names highest"
+            id="highest"
+            placeholder="Highest Level of Education"
+          />
+          <input
+            type="text"
+            name="relgion"
+            id="institution"
+            class="language names institution"
+            placeholder="Name of Institution"
+          />
+          <input
+            type="text"
+            name="relgion"
+            id="study"
+            class="language names study"
+            placeholder="Field of Study/Major"
+          />
+          <input
+            type="text"
+            name="relgion"
+            id="year"
+            class="language names year"
+            placeholder="Graduation Year"
+            maxlength="4"
+          />
+          <!--input type="date" id="year" -->
+          <input
+            type="text"
+            name="relgion"
+            id="achievements"
+            class="language names achievements"
+            placeholder="Academic Achievements"
+          />
+        </form>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <i class="fas fa-phone"></i> Contact <span>Me</span>
+      </h1>
+      <div class="row">
+        <form id="user-contact">
+          <input
+            type="number"
+            class="phone-number names"
+            id="numberr"
+            required
+            placeholder="Phone Number"
+            maxlength="11"
+          />
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            class="emaill names"
+            required
+          />
+
+          <input
+            type="url"
+            placeholder="website"
+            class="websits names"
+            id="websitee"
+          />
+
+          <input
+            type="url"
+            placeholder="LinkedIn"
+            class="linkedins names"
+            id="linkedinn"
+          />
+
+          <input
+            type="url"
+            placeholder="GitHub"
+            class="githubs names"
+            id="githubb"
+          />
+
+          <input
+            type="url"
+            placeholder="Twitter"
+            class="twitter names"
+            id="Twitter"
+          />
+        </form>
+        <button id="submit" class="submit">
+          Send <i class="fas fa-paper-plane" style="color: white"></i>
+        </button>
+      </div>
+    </section>
+
+    <script src="port.js"></script>
+  </body>
+</html>

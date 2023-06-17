@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="card">
+        <img src="" alt="" id="profile-pic" class="profilePic" />
+        <label
+          for="input-file"
+          class="input-file fas fa-camera"
+          id="inputt"
+        ></label>
+        <input
+          class="input"
+          type="file"
+          id="input-file"
+          accept="image/jpeg, image/png, image/jpg"
+        />
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#education">education</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <h3><span>HI</span> THERE !</h3>
+      <div id="user-info" class="user-info">
+        <h1>
+          I'm <span id="first-name"> </span> <span id="middle-name"> </span>
+          <span id="last-name"> </span>
+        </h1>
+
+        <!--p class="middle"></p>
+
+        <p class="last"></p-->
+      </div>
+      <a href="#about"
+        ><button class="btn">about me <i class="fas fa-user"></i></button
+      ></a>
+    </section>
+
+    <section class="about" id="about">
+      <h1 class="heading"><i class="fas fa-user"></i><span> About</span> me</h1>
+      <div class="row">
+        <div class="info">
+          <p class="bou">About Me: <span id="bout"></span></p>
+          <p class="gend">Gender: <span id="gender"></span></p>
+          <p class="count">Country: <span id="country"></span></p>
+          <p class="relig">Religion: <span id="religion"></span></p>
+          <p class="lang">Language: <span id="language"></span></p>
+          <p class="post">Post: <span id="post"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h1 class="heading">
+        <i class="fas fa-graduation-cap"></i> My <span>Education</span>
+      </h1>
+      <div class="row edu">
+        <p class="high">HighestLevel: <span id="highest-Level"></span></p>
+        <p class="inst">Institution: <span id="institution"></span></p>
+        <p class="stud">Study: <span id="study"></span></p>
+        <p class="yea">Year: <span id="year"></span></p>
+        <p class="achieve">Achievements: <span id="achievement"></span></p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <i class="fas fa-phone"></i> Contact <span>Me</span>
+      </h1>
+      <div class="row">
+        <p class="numb">Phone Number: <span id="number"></span></p>
+        <p class="emai">Email: <span id="email"></span></p>
+        <p class="websi">Website: <span id="website"></span></p>
+        <p class="link">LinkedIn: <span id="linkedin"></span></p>
+        <p class="gith">Github: <span id="github"></span></p>
+        <p class="twit">Twitter: <span id="twitter"></span></p>
+      </div>
+      <button class="Edit">
+        Edit Me <i class="fas fa-edit" style="color: white"></i>
+      </button>
+    </section>
+    <script src="profile.js"></script>
+  </body>
+</html>
